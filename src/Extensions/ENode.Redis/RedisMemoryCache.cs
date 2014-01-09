@@ -10,7 +10,7 @@ namespace ENode.Redis
     /// </summary>
     public class RedisMemoryCache : IMemoryCache
     {
-        private readonly RedisClient _redisClient;
+        private readonly IRedisNativeClient _redisClient;
         private readonly IBinarySerializer _binarySerializer;
 
         /// <summary>Parameterized constructor.
@@ -20,6 +20,12 @@ namespace ENode.Redis
         public RedisMemoryCache(string host, int port)
         {
             _redisClient = new RedisClient(host, port);
+            _binarySerializer = ObjectContainer.Resolve<IBinarySerializer>();
+        }
+
+        public RedisMemoryCache(IRedisNativeClient redisClient)
+        {
+            _redisClient = redisClient;
             _binarySerializer = ObjectContainer.Resolve<IBinarySerializer>();
         }
 

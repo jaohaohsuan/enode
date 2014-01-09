@@ -1,6 +1,7 @@
 ﻿using ENode.Domain;
 using ENode.Eventing;
 using ENode.Infrastructure.Serializing;
+using ServiceStack.Redis;
 
 namespace ENode.Redis
 {
@@ -23,6 +24,13 @@ namespace ENode.Redis
             configuration.SetDefault<IMemoryCache, RedisMemoryCache>(new RedisMemoryCache(host, port));
             return configuration;
         }
+
+        public static Configuration UseRedisMemoryCache(this Configuration configuration, IRedisNativeClient redisClient)
+        {
+            configuration.SetDefault<IMemoryCache, RedisMemoryCache>(new RedisMemoryCache(redisClient));
+            return configuration;
+        }
+
         /// <summary>Use Redis to implement the eventstore for the enode framework.
         /// </summary>
         /// <returns></returns>
