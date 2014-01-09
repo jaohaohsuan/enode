@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENode.Autofac", "src\Extens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTransferSample", "src\Samples\BankTransferSample\BankTransferSample.csproj", "{63EAC41D-65DA-4E14-95B0-BEAE86442F4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENode.NLog", "src\Extensions\ENode.NLog\ENode.NLog.csproj", "{549D2955-229B-41D6-89AA-A3CFA3458074}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -130,6 +132,16 @@ Global
 		{63EAC41D-65DA-4E14-95B0-BEAE86442F4F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{63EAC41D-65DA-4E14-95B0-BEAE86442F4F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{63EAC41D-65DA-4E14-95B0-BEAE86442F4F}.Release|x86.ActiveCfg = Release|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{549D2955-229B-41D6-89AA-A3CFA3458074}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +155,7 @@ Global
 		{6C201374-2F02-4134-8098-9D7D8DFCE31A} = {93D62F41-6B3D-4828-BA92-13F6CFB3E388}
 		{0F063898-FB02-47D9-B6C6-7A4CFE4B6C51} = {93D62F41-6B3D-4828-BA92-13F6CFB3E388}
 		{B4258B15-71B1-4B3B-960A-6A1C75CA2004} = {93D62F41-6B3D-4828-BA92-13F6CFB3E388}
+		{549D2955-229B-41D6-89AA-A3CFA3458074} = {93D62F41-6B3D-4828-BA92-13F6CFB3E388}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35

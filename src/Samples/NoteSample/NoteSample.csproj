@@ -103,6 +103,10 @@
       <Project>{25dda9f0-dc61-4446-9364-b29376215155}</Project>
       <Name>ENode.Mongo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Extensions\ENode.NLog\ENode.NLog.csproj">
+      <Project>{549d2955-229b-41d6-89aa-a3cfa3458074}</Project>
+      <Name>ENode.NLog</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Extensions\ENode.Redis\ENode.Redis.csproj">
       <Project>{6c201374-2f02-4134-8098-9d7d8dfce31a}</Project>
       <Name>ENode.Redis</Name>
@@ -116,6 +120,9 @@
     <None Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
